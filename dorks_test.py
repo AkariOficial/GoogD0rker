@@ -17,7 +17,7 @@ def main():
     results_list = []
 
     dorks = {
-        'site': 'site:"{}" inurl:"wp-" OR inurl:"plugin" OR inurl:"upload" OR inurl:"download"'.format(site),
+        'site': 'site:"{}" OR inurl:"gov"'.format(site),
         'php': 'inurl:"?id=" AND filetype:"php"',
         'loginPage': 'loginpage.txt'
     }
@@ -31,7 +31,7 @@ def main():
         results_list.extend(search_results)
 
         # Aguarde 5 segundos antes de fazer a próxima solicitação
-        time.sleep(5)
+        # time.sleep(5)
 
     print(results_list)
 
@@ -40,7 +40,7 @@ def google_search(query):
     url = 'https://www.google.com/search?q=' + query
 
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36'
     }
 
     response = httpx.get(url, headers=headers)
