@@ -3,8 +3,9 @@
 # Python 3 re-write of version 2.0
 
 import argparse
+from re import L
 from googlesearch import search
-
+from time import sleep
 
 def main():
     parser = argparse.ArgumentParser(description='GoogD0rker performs Google dork queries to uncover information about a domain.')
@@ -26,8 +27,9 @@ def main():
             print("Currently Running: {}".format(dorks[dork]))
 
         search_results = search(dorks[dork], tld='com', lang='en', num=10, start=0, stop=None, pause=2.0)
-
+        print(next(search_results))
         results_list.extend(search_results)
+        sleep(4)
 
     print(results_list)
 
