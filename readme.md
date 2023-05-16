@@ -43,5 +43,5 @@ eval "$(pyenv virtualenv-init -)"
 
 ### e por fim, rode o programa:
 ```bash
- python googD0rk-donotuse.py -d example.com
+ python dorks.py -d example.com
 ```
