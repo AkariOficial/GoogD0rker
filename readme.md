@@ -45,3 +45,7 @@ eval "$(pyenv virtualenv-init -)"
 ```bash
  python dorks.py -d example.com
 ```
+### se o primeiro não funcionar, tente o segundo
+```
+ python dorks_test.py -d teste.google.com
+```
