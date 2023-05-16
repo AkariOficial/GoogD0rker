@@ -33,7 +33,7 @@ eval "$(pyenv virtualenv-init -)"
 
 ### clone o repositório:
 ```bash
- git clone https://github.com/ZephrFish/GoogD0rker $HOME/GoogleDorker && cd $HOME/GoogleDorker && clear && ls
+ git clone https://github.com/AkariOficial/GoogD0rker $HOME/GoogleDorker && cd $HOME/GoogleDorker && clear && ls
 ```
 
 ### instale as dependências necessárias:
